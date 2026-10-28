@@ -27,7 +27,7 @@ Kontaktní formulář web nemá – návštěvníci se ozývají telefonem, pře
 
 ## SEO – co web obsahuje
 
-- titulek, popis, kanonická adresa, Open Graph a Twitter karty s náhledovým obrázkem 1200 × 630 (`assets/img/og-image.jpg`),
+- titulek, popis, kanonická adresa, Open Graph a Twitter karty s náhledovým obrázkem 1200 × 630 (`assets/img/og-image-2.jpg`),
 - strukturovaná data JSON-LD: WebSite, Person, ProfessionalService s nabídkou a cenou, FAQPage,
 - `sitemap.xml`, `robots.txt`, `site.webmanifest`, ikony pro prohlížeče a iPhone, vlastní `404.html`,
 - jedna hlavní nadpis `h1`, logická struktura nadpisů, popisky všech obrázků,
@@ -42,6 +42,13 @@ Nahraďte adresu `https://anetasindlarova.vercel.app` novou doménou v souborech
 
 1. Přidejte web do [Google Search Console](https://search.google.com/search-console) a odešlete `sitemap.xml`.
 2. Založte si [Firemní profil Google](https://business.google.com) se stejnou adresou a telefonem jako na webu (Těškovice 127, +420 739 998 919) – pro hledání „výživová poradkyně + město“ je to nejdůležitější krok.
+
+## Po úpravě CSS nebo JS
+
+Soubory v `assets` mají v prohlížeči dlouhou mezipaměť (`vercel.json`). Když změníte
+`styles.css` nebo `main.js`, zvyšte v `index.html` a `404.html` číslo za `?v=`
+(např. `styles.css?v=8` → `?v=9`), jinak se vracejícím návštěvníkům zobrazí stará verze.
+U obrázků stejně tak: změněnou fotku uložte pod novým názvem.
 
 ## Písmo
 
