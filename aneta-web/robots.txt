@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://anetasindlarova.vercel.app/sitemap.xml
+Sitemap: https://anetasindlarova.cz/sitemap.xml
