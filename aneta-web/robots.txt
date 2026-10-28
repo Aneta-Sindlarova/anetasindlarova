@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://anetasindlarova.vercel.app/sitemap.xml
