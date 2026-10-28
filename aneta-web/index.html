@@ -62,7 +62,9 @@
         "honorificSuffix": "DiS.",
         "jobTitle": "Výživová poradkyně Metabolic Balance®",
         "url": "https://anetasindlarova.vercel.app/",
-        "image": "https://anetasindlarova.vercel.app/assets/img/og-image.jpg",
+        "image": "https://anetasindlarova.vercel.app/assets/img/aneta-1000.jpg",
+        "telephone": "+420739998919",
+        "email": "a.sindlarova@email.cz",
         "knowsAbout": ["výživové poradenství", "Metabolic Balance", "redukce hmotnosti", "individuální jídelníček", "změna stravovacích návyků"],
         "knowsLanguage": "cs"
       },
@@ -74,7 +76,18 @@
         "url": "https://anetasindlarova.vercel.app/",
         "image": "https://anetasindlarova.vercel.app/assets/img/og-image.jpg",
         "founder": { "@id": "https://anetasindlarova.vercel.app/#aneta" },
-        "areaServed": { "@type": "Country", "name": "Česká republika" },
+        "telephone": "+420739998919",
+        "email": "a.sindlarova@email.cz",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Těškovice 127",
+          "addressLocality": "Těškovice",
+          "postalCode": "747 64",
+          "addressRegion": "Moravskoslezský kraj",
+          "addressCountry": "CZ"
+        },
+        "identifier": { "@type": "PropertyValue", "propertyID": "IČO", "value": "29953057" },
+        "areaServed": [{ "@type": "AdministrativeArea", "name": "Moravskoslezský kraj" }, { "@type": "Country", "name": "Česká republika" }],
         "availableLanguage": "cs",
         "priceRange": "17 000 Kč",
         "makesOffer": {
@@ -90,12 +103,12 @@
         "@type": "FAQPage",
         "@id": "https://anetasindlarova.vercel.app/#dotazy",
         "mainEntity": [
-          { "@type": "Question", "name": "Jak dlouho program Metabolic Balance® trvá?", "acceptedAnswer": { "@type": "Answer", "text": "Zpravidla 3 až 6 měsíců. Sedm konzultací rozložíme podle Vašeho cíle a tempa." } },
-          { "@type": "Question", "name": "Jsou krevní odběry zahrnuté v ceně?", "acceptedAnswer": { "@type": "Answer", "text": "Ne. Laboratorní odběry si hradíte zvlášť, podle odběrného místa přibližně 900–1 200 Kč." } },
-          { "@type": "Question", "name": "Můžu konzultace absolvovat online?", "acceptedAnswer": { "@type": "Answer", "text": "Ano. Každou konzultaci můžete mít osobně nebo online." } },
-          { "@type": "Question", "name": "Co když si mezi konzultacemi nebudu vědět rady?", "acceptedAnswer": { "@type": "Answer", "text": "Napíšete mi na WhatsApp a odpovím nejpozději do 24 hodin. Plán máte navíc stále po ruce v mobilní aplikaci." } },
-          { "@type": "Question", "name": "Je program vhodný pro kojící ženy?", "acceptedAnswer": { "@type": "Answer", "text": "Ne, pro kojící ženy program Metabolic Balance® vhodný není." } },
-          { "@type": "Question", "name": "Musím přestat jíst všechno, co mám ráda?", "acceptedAnswer": { "@type": "Answer", "text": "Plán vychází z hodnot Vaší krve a obsahuje seznam vhodných potravin, jejich kombinace a porce. Na konzultacích spolu hledáme cestu, která funguje ve Vašem běžném životě." } }
+          { "@type": "Question", "name": "Jak dlouho program trvá?", "acceptedAnswer": { "@type": "Answer", "text": "Zpravidla 3 až 6 měsíců. Sedm konzultací rozložíme podle Vašeho cíle a tempa." } },
+          { "@type": "Question", "name": "Jsou krevní odběry zahrnuté v ceně?", "acceptedAnswer": { "@type": "Answer", "text": "Ne. Odběry si hradíte zvlášť v laboratoři, podle odběrného místa přibližně 900–1 200 Kč. Seznam potřebných hodnot dostanete na úvodní konzultaci." } },
+          { "@type": "Question", "name": "Můžu konzultace absolvovat online?", "acceptedAnswer": { "@type": "Answer", "text": "Ano. Každou konzultaci můžete mít osobně nebo online, podle toho, co Vám vyhovuje." } },
+          { "@type": "Question", "name": "Co když si mezi konzultacemi nebudu vědět rady?", "acceptedAnswer": { "@type": "Answer", "text": "Napište mi na WhatsApp – odpovídám nejpozději do 24 hodin. Svůj plán máte navíc stále po ruce v mobilní aplikaci." } },
+          { "@type": "Question", "name": "Musím přestat jíst všechno, co mám ráda?", "acceptedAnswer": { "@type": "Answer", "text": "Plán vychází z hodnot Vaší krve a obsahuje seznam vhodných potravin, jejich kombinace a porce. Na konzultacích spolu hledáme cestu, která funguje ve Vašem běžném životě." } },
+          { "@type": "Question", "name": "Je program vhodný pro kojící maminky?", "acceptedAnswer": { "@type": "Answer", "text": "Ne, pro kojící ženy program vhodný není. Ráda se s Vámi spojím, až budete mít kojení za sebou." } }
         ]
       }
     ]
@@ -111,18 +124,17 @@
         <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16"/><g transform="rotate(-40 32 32)"><path d="M9.5 32 Q32 7 54.5 32 Q32 57 9.5 32Z"/><path class="brand__vein" d="M10 32H46"/></g></svg>
         <span class="brand__text">
           <span class="brand__name">Aneta Šindlářová</span>
-          <span class="brand__role">výživová poradkyně</span>
+          <span class="brand__role">výživová poradkyně <span class="brand__mb">Metabolic Balance®</span></span>
         </span>
       </a>
 
       <nav class="nav" id="menu" aria-label="Hlavní menu" data-nav>
         <ul class="nav__list">
           <li><a href="#program">Program</a></li>
-          <li><a href="#pribeh">Můj příběh</a></li>
           <li><a href="#o-mne">O mně</a></li>
+          <li><a href="#pribeh">Můj příběh</a></li>
           <li><a href="#cenik">Ceník</a></li>
           <li><a href="#dotazy">Dotazy</a></li>
-          <li><a href="#reference">Reference</a></li>
         </ul>
         <a class="btn btn--dark nav__cta" href="#kontakt">Domluvit konzultaci</a>
       </nav>
@@ -163,8 +175,12 @@
             <img src="/assets/img/uvod-wide-1600.jpg" srcset="/assets/img/uvod-wide-900.jpg 900w, /assets/img/uvod-wide-1600.jpg 1600w, /assets/img/uvod-wide-2400.jpg 2400w" sizes="(min-width: 1440px) 1360px, 94vw" width="2400" height="1029" alt="Talíř se zeleninou, vejcem a avokádem – vyvážené jídlo podle plánu Metabolic Balance" fetchpriority="high" decoding="async">
           </picture>
           <figcaption class="hero__badge">
-            <strong>−30 kg</strong>
-            <span>Program jsem si nejdřív prošla sama</span>
+            <picture>
+              <source type="image/avif" srcset="/assets/img/aneta-avatar-192.avif">
+              <source type="image/webp" srcset="/assets/img/aneta-avatar-192.webp">
+              <img class="hero__avatar" src="/assets/img/aneta-avatar-192.jpg" width="96" height="96" alt="Aneta Šindlářová">
+            </picture>
+            <span><strong>−30 kg</strong> Osobní zkušenost s programem</span>
           </figcaption>
           <p class="hero__chip">Konzultace osobně i online</p>
         </figure>
@@ -250,79 +266,176 @@
       </div>
     </section>
 
-    <!-- PŘÍBĚH -->
-    <section class="section story" id="pribeh" aria-labelledby="pribeh-title">
-      <div class="wrap">
-        <div class="head">
-          <h2 class="title" id="pribeh-title">Program jsem si prošla sama. Dvakrát.</h2>
-          <p class="head__text">Poprvé jsem vážila 98&nbsp;kg a „neviděla jsem to“. Podruhé jsem začínala po porodu, s miminkem a úplně jiným denním režimem. Obě cesty mě naučily, že změna nepotřebuje dokonalé podmínky.</p>
-        </div>
-
-        <figure class="journey" data-journey>
-          <div class="journey__scroll" tabindex="0" role="group" aria-label="Graf: moje váha v klíčových okamžicích">
-            <svg class="journey__chart" viewBox="0 0 1000 400" role="img" aria-labelledby="journey-t journey-d">
-              <title id="journey-t">Moje váha v klíčových okamžicích</title>
-              <desc id="journey-d">Začátek 98 kg, po prvním programu o 30 kg méně, v den porodu 105 kg, po šestinedělí 89 kg, v lednu 2026 85 kg a rok po porodu 72 kg.</desc>
-              <line class="journey__axis" x1="0" y1="340" x2="1000" y2="340"/>
-              <line class="journey__split" x1="325" y1="20" x2="325" y2="340"/>
-              <text class="journey__note" x="337" y="326">o několik let později</text>
-              <path class="journey__area" d="M60 97 L220 289 L430 52 L600 154 L770 180 L940 263 L940 340 L60 340Z"/>
-              <path class="journey__line" pathLength="1" d="M60 97 L220 289 L430 52 L600 154 L770 180 L940 263"/>
-              <g class="journey__dots">
-                <circle cx="60" cy="97" r="7"/><circle cx="220" cy="289" r="7"/><circle cx="430" cy="52" r="7"/>
-                <circle cx="600" cy="154" r="7"/><circle cx="770" cy="180" r="7"/><circle class="journey__end" cx="940" cy="263" r="12"/>
-              </g>
-              <g class="journey__kg">
-                <text x="60" y="78">98 kg</text><text x="220" y="326">−30 kg</text><text x="430" y="33">105 kg</text>
-                <text x="600" y="135">89 kg</text><text x="770" y="161">85 kg</text><text x="940" y="238">72 kg</text>
-              </g>
-              <g class="journey__when">
-                <text x="60" y="378">Začátek</text><text x="220" y="378">Po programu</text><text x="430" y="378">Den porodu</text>
-                <text x="600" y="378">Po šestinedělí</text><text x="770" y="378">Leden 2026</text><text x="940" y="378">Rok po porodu</text>
-              </g>
-            </svg>
-          </div>
-          <figcaption>Osa ukazuje milníky, ne rovnoměrný čas. Při redukci po porodu jsem již nekojila – pro kojící ženy program není vhodný.</figcaption>
-        </figure>
-
-        <div class="story__cols">
-          <article>
-            <h3>Začátek</h3>
-            <p>Můj tehdejší život stál na přejídání, spoustě piva a téměř žádném pohybu. Přestala jsem kupovat oblečení a kupovala jen boty – velikost nohy se neměnila. Až při prohlížení fotek jsem uviděla realitu a řekla si, že takhle to dál nejde.</p>
-          </article>
-          <article>
-            <h3>První proměna</h3>
-            <p>Plán mi sestavila maminka. První týden jsem byla unavená a pochybovala, jestli to zvládnu. Pak jsem se postavila na váhu: 3&nbsp;kg dole. To mě nakoplo – přišla energie, sport a radost z oblečení.</p>
-          </article>
-          <article>
-            <h3>Po porodu</h3>
-            <p>Plán jsem si znovu připnula na lednici, tentokrát s miminkem a méně časem. Rok po porodu vážím 72&nbsp;kg. Největší radost mi ale dělá, že jsem zase spokojená ve svém těle.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- O MNĚ -->
+    <!-- O MNĚ A MŮJ PŘÍBĚH -->
     <section class="section about" id="o-mne" aria-labelledby="o-mne-title">
-      <div class="wrap about__grid">
-        <figure class="about__photo">
-          <!-- Až budete mít portrét, nahraďte soubory aneta-600/1000 ve složce assets/img (poměr 4 : 5). -->
-          <picture>
-            <source type="image/avif" srcset="/assets/img/aneta-600.avif 600w, /assets/img/aneta-1000.avif 1000w" sizes="(min-width: 960px) 40vw, 94vw">
-            <source type="image/webp" srcset="/assets/img/aneta-600.webp 600w, /assets/img/aneta-1000.webp 1000w" sizes="(min-width: 960px) 40vw, 94vw">
-            <img src="/assets/img/aneta-1000.jpg" srcset="/assets/img/aneta-600.jpg 600w, /assets/img/aneta-1000.jpg 1000w" sizes="(min-width: 960px) 40vw, 94vw" width="1000" height="1250" loading="lazy" decoding="async" alt="Jogurt s ořechy a lesním ovocem ve skleničce">
-          </picture>
-        </figure>
+      <div class="wrap">
+        <div class="about__grid">
+          <figure class="about__photo">
+            <picture>
+              <source type="image/avif" srcset="/assets/img/aneta-600.avif 600w, /assets/img/aneta-1000.avif 1000w" sizes="(min-width: 960px) 340px, (min-width: 600px) 300px, 70vw">
+              <source type="image/webp" srcset="/assets/img/aneta-600.webp 600w, /assets/img/aneta-1000.webp 1000w" sizes="(min-width: 960px) 340px, (min-width: 600px) 300px, 70vw">
+              <img src="/assets/img/aneta-1000.jpg" srcset="/assets/img/aneta-600.jpg 600w, /assets/img/aneta-1000.jpg 1000w" sizes="(min-width: 960px) 340px, (min-width: 600px) 300px, 70vw" width="1000" height="1250" loading="lazy" decoding="async" alt="Aneta Šindlářová, výživová poradkyně Metabolic Balance®">
+            </picture>
+          </figure>
 
-        <div class="about__copy">
-          <h2 class="title" id="o-mne-title">Jmenuji se Aneta</h2>
-          <p class="about__lead">K výživě mě nepřivedl jen zájem, ale hlavně vlastní zkušenost. Díky Metabolic Balance® jsem zhubla 30&nbsp;kg, získala víc energie a postupně kompletně změnila svůj životní styl.</p>
-          <p>Nevěřím na univerzální řešení. Každý z nás má jiné návyky, možnosti i cíle. Jako maminka malé dcery vím, jak těžké je myslet na sebe mezi rodinou, prací a povinnostmi – proto hledám cestu, která funguje v reálném životě, nejen na papíře.</p>
-          <p>Nechci Vám jen předat plán. Chci, abyste rozuměli, proč jednotlivé změny děláme, naučili se vnímat potřeby svého těla a vytvořili si návyky, které udržíte.</p>
-          <blockquote class="about__quote">
-            <p>Vím, jaké to je stát na začátku. A vím, jak skvělý pocit přijde, když se člověk začne ve svém těle cítit lépe.</p>
-            <footer>Vaše Aneta</footer>
-          </blockquote>
+          <div class="about__copy">
+            <h2 class="title" id="o-mne-title">Jmenuji se Aneta</h2>
+            <p class="about__lead">K výživě mě nepřivedl jen zájem, ale hlavně vlastní zkušenost. Díky Metabolic Balance® jsem zhubla 30&nbsp;kg, získala víc energie a postupně kompletně změnila svůj životní styl.</p>
+            <p>Nevěřím na univerzální řešení. Každý z nás má jiné návyky, možnosti i cíle. Jako maminka malé dcery vím, jak těžké je myslet na sebe mezi rodinou, prací a povinnostmi – proto hledám cestu, která funguje v reálném životě, nejen na papíře.</p>
+            <p>Nechci Vám jen předat plán. Chci, abyste rozuměli, proč jednotlivé změny děláme, naučili se vnímat potřeby svého těla a vytvořili si návyky, které udržíte.</p>
+            <blockquote class="about__quote">
+              <p>Vím, jaké to je stát na začátku. A vím, jak skvělý pocit přijde, když se člověk začne ve svém těle cítit lépe.</p>
+              <footer>Vaše Aneta</footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="story" id="pribeh">
+          <div class="head story__head">
+            <h2 class="title" id="pribeh-title">Program jsem si prošla sama. Dvakrát.</h2>
+            <p class="head__text">Poprvé jsem vážila 98&nbsp;kg a „neviděla jsem to“. Podruhé jsem začínala po porodu, s miminkem a úplně jiným denním režimem. Obě cesty mě naučily, že změna nepotřebuje dokonalé podmínky.</p>
+          </div>
+
+          <figure class="journey" data-journey>
+            <div class="journey__scroll" tabindex="0" role="group" aria-label="Graf: moje váha v klíčových okamžicích">
+              <svg class="journey__chart" viewBox="0 0 1000 400" role="img" aria-labelledby="journey-t journey-d">
+                <title id="journey-t">Moje váha v klíčových okamžicích</title>
+                <desc id="journey-d">Leden 2020 98 kg, leden 2021 68 kg, v den porodu 105 kg, po šestinedělí 89 kg, v lednu 2026 85 kg a v srpnu 2026, rok po porodu, 72 kg.</desc>
+                <line class="journey__axis" x1="0" y1="340" x2="1000" y2="340"/>
+                <line class="journey__split" x1="325" y1="20" x2="325" y2="340"/>
+                <text class="journey__note" x="337" y="326">o několik let později</text>
+                <path class="journey__area" d="M60 97 L220 289 L430 52 L600 154 L770 180 L940 263 L940 340 L60 340Z"/>
+                <path class="journey__line" pathLength="1" d="M60 97 L220 289 L430 52 L600 154 L770 180 L940 263"/>
+                <g class="journey__dots">
+                  <circle cx="60" cy="97" r="7"/><circle cx="220" cy="289" r="7"/><circle cx="430" cy="52" r="7"/>
+                  <circle cx="600" cy="154" r="7"/><circle cx="770" cy="180" r="7"/><circle class="journey__end" cx="940" cy="263" r="12"/>
+                </g>
+                <g class="journey__kg">
+                  <text x="60" y="78">98 kg</text><text x="220" y="326">68 kg</text><text x="430" y="33">105 kg</text>
+                  <text x="600" y="135">89 kg</text><text x="770" y="161">85 kg</text><text x="940" y="238">72 kg</text>
+                </g>
+                <g class="journey__when">
+                  <text x="60" y="378">Leden 2020</text><text x="220" y="378">Leden 2021</text><text x="430" y="378">Den porodu</text>
+                  <text x="600" y="378">Po šestinedělí</text><text x="770" y="378">Leden 2026</text><text x="940" y="378">Srpen 2026</text>
+                </g>
+              </svg>
+            </div>
+            <figcaption>Osa ukazuje milníky, ne rovnoměrný čas. Při redukci po porodu jsem již nekojila – pro kojící ženy program není vhodný.</figcaption>
+          </figure>
+
+
+          <div class="gallery" data-gallery data-view="front">
+            <div class="gallery__head">
+              <h3 class="gallery__title">Proměna na fotkách</h3>
+              <div class="seg" role="group" aria-label="Pohled na fotky">
+                <button type="button" aria-pressed="true" data-view-btn="front">Zepředu</button>
+                <button type="button" aria-pressed="false" data-view-btn="side">Z boku</button>
+              </div>
+            </div>
+            <div class="gallery__rows">
+              <div class="gallery__row">
+                <p class="gallery__label">První proměna</p>
+                <ol class="gallery__track">
+                <li>
+                  <figure class="shot">
+                    <picture class="shot__front">
+                      <source type="image/avif" srcset="/assets/img/promena-1-zacatek-zepredu-360.avif 360w, /assets/img/promena-1-zacatek-zepredu-720.avif 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <source type="image/webp" srcset="/assets/img/promena-1-zacatek-zepredu-360.webp 360w, /assets/img/promena-1-zacatek-zepredu-720.webp 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <img src="/assets/img/promena-1-zacatek-zepredu-720.jpg" srcset="/assets/img/promena-1-zacatek-zepredu-360.jpg 360w, /assets/img/promena-1-zacatek-zepredu-720.jpg 720w" sizes="(min-width: 1000px) 18vw, 60vw" width="720" height="1200" loading="lazy" decoding="async" alt="Aneta zepředu – leden 2020, 98 kg">
+                    </picture>
+                    <picture class="shot__side">
+                      <source type="image/avif" srcset="/assets/img/promena-1-zacatek-zboku-360.avif 360w, /assets/img/promena-1-zacatek-zboku-720.avif 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <source type="image/webp" srcset="/assets/img/promena-1-zacatek-zboku-360.webp 360w, /assets/img/promena-1-zacatek-zboku-720.webp 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <img src="/assets/img/promena-1-zacatek-zboku-720.jpg" srcset="/assets/img/promena-1-zacatek-zboku-360.jpg 360w, /assets/img/promena-1-zacatek-zboku-720.jpg 720w" sizes="(min-width: 1000px) 18vw, 60vw" width="720" height="1200" loading="lazy" decoding="async" alt="Aneta z boku – leden 2020, 98 kg">
+                    </picture>
+                    <figcaption><strong>98 kg</strong><span>Leden 2020</span></figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="shot">
+                    <picture class="shot__front">
+                      <source type="image/avif" srcset="/assets/img/promena-1-prubeh-zepredu-360.avif 360w, /assets/img/promena-1-prubeh-zepredu-720.avif 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <source type="image/webp" srcset="/assets/img/promena-1-prubeh-zepredu-360.webp 360w, /assets/img/promena-1-prubeh-zepredu-720.webp 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <img src="/assets/img/promena-1-prubeh-zepredu-720.jpg" srcset="/assets/img/promena-1-prubeh-zepredu-360.jpg 360w, /assets/img/promena-1-prubeh-zepredu-720.jpg 720w" sizes="(min-width: 1000px) 18vw, 60vw" width="720" height="1200" loading="lazy" decoding="async" alt="Aneta zepředu – duben 2020, 81 kg">
+                    </picture>
+                    <picture class="shot__side">
+                      <source type="image/avif" srcset="/assets/img/promena-1-prubeh-zboku-360.avif 360w, /assets/img/promena-1-prubeh-zboku-720.avif 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <source type="image/webp" srcset="/assets/img/promena-1-prubeh-zboku-360.webp 360w, /assets/img/promena-1-prubeh-zboku-720.webp 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <img src="/assets/img/promena-1-prubeh-zboku-720.jpg" srcset="/assets/img/promena-1-prubeh-zboku-360.jpg 360w, /assets/img/promena-1-prubeh-zboku-720.jpg 720w" sizes="(min-width: 1000px) 18vw, 60vw" width="720" height="1200" loading="lazy" decoding="async" alt="Aneta z boku – duben 2020, 81 kg">
+                    </picture>
+                    <figcaption><strong>81 kg</strong><span>Duben 2020</span></figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="shot">
+                    <picture class="shot__front">
+                      <source type="image/avif" srcset="/assets/img/promena-1-po-zepredu-360.avif 360w, /assets/img/promena-1-po-zepredu-720.avif 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <source type="image/webp" srcset="/assets/img/promena-1-po-zepredu-360.webp 360w, /assets/img/promena-1-po-zepredu-720.webp 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <img src="/assets/img/promena-1-po-zepredu-720.jpg" srcset="/assets/img/promena-1-po-zepredu-360.jpg 360w, /assets/img/promena-1-po-zepredu-720.jpg 720w" sizes="(min-width: 1000px) 18vw, 60vw" width="720" height="1200" loading="lazy" decoding="async" alt="Aneta zepředu – leden 2021, 68 kg">
+                    </picture>
+                    <picture class="shot__side">
+                      <source type="image/avif" srcset="/assets/img/promena-1-po-zboku-360.avif 360w, /assets/img/promena-1-po-zboku-720.avif 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <source type="image/webp" srcset="/assets/img/promena-1-po-zboku-360.webp 360w, /assets/img/promena-1-po-zboku-720.webp 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <img src="/assets/img/promena-1-po-zboku-720.jpg" srcset="/assets/img/promena-1-po-zboku-360.jpg 360w, /assets/img/promena-1-po-zboku-720.jpg 720w" sizes="(min-width: 1000px) 18vw, 60vw" width="720" height="1200" loading="lazy" decoding="async" alt="Aneta z boku – leden 2021, 68 kg">
+                    </picture>
+                    <figcaption><strong>68 kg</strong><span>Leden 2021</span></figcaption>
+                  </figure>
+                </li>
+                </ol>
+              </div>
+              <div class="gallery__row">
+                <p class="gallery__label">Po porodu</p>
+                <ol class="gallery__track">
+                <li>
+                  <figure class="shot">
+                    <picture class="shot__front">
+                      <source type="image/avif" srcset="/assets/img/promena-2-leden-zepredu-360.avif 360w, /assets/img/promena-2-leden-zepredu-720.avif 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <source type="image/webp" srcset="/assets/img/promena-2-leden-zepredu-360.webp 360w, /assets/img/promena-2-leden-zepredu-720.webp 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <img src="/assets/img/promena-2-leden-zepredu-720.jpg" srcset="/assets/img/promena-2-leden-zepredu-360.jpg 360w, /assets/img/promena-2-leden-zepredu-720.jpg 720w" sizes="(min-width: 1000px) 18vw, 60vw" width="720" height="1200" loading="lazy" decoding="async" alt="Aneta zepředu – leden 2026, 4 měsíce po porodu, 85 kg">
+                    </picture>
+                    <picture class="shot__side">
+                      <source type="image/avif" srcset="/assets/img/promena-2-leden-zboku-360.avif 360w, /assets/img/promena-2-leden-zboku-720.avif 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <source type="image/webp" srcset="/assets/img/promena-2-leden-zboku-360.webp 360w, /assets/img/promena-2-leden-zboku-720.webp 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <img src="/assets/img/promena-2-leden-zboku-720.jpg" srcset="/assets/img/promena-2-leden-zboku-360.jpg 360w, /assets/img/promena-2-leden-zboku-720.jpg 720w" sizes="(min-width: 1000px) 18vw, 60vw" width="720" height="1200" loading="lazy" decoding="async" alt="Aneta z boku – leden 2026, 4 měsíce po porodu, 85 kg">
+                    </picture>
+                    <figcaption><strong>85 kg</strong><span>Leden 2026, 4 měsíce po porodu</span></figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="shot">
+                    <picture class="shot__front">
+                      <source type="image/avif" srcset="/assets/img/promena-2-rok-zepredu-360.avif 360w, /assets/img/promena-2-rok-zepredu-720.avif 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <source type="image/webp" srcset="/assets/img/promena-2-rok-zepredu-360.webp 360w, /assets/img/promena-2-rok-zepredu-720.webp 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <img src="/assets/img/promena-2-rok-zepredu-720.jpg" srcset="/assets/img/promena-2-rok-zepredu-360.jpg 360w, /assets/img/promena-2-rok-zepredu-720.jpg 720w" sizes="(min-width: 1000px) 18vw, 60vw" width="720" height="1200" loading="lazy" decoding="async" alt="Aneta zepředu – srpen 2026, rok po porodu, 72 kg">
+                    </picture>
+                    <picture class="shot__side">
+                      <source type="image/avif" srcset="/assets/img/promena-2-rok-zboku-360.avif 360w, /assets/img/promena-2-rok-zboku-720.avif 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <source type="image/webp" srcset="/assets/img/promena-2-rok-zboku-360.webp 360w, /assets/img/promena-2-rok-zboku-720.webp 720w" sizes="(min-width: 1000px) 18vw, 60vw">
+                      <img src="/assets/img/promena-2-rok-zboku-720.jpg" srcset="/assets/img/promena-2-rok-zboku-360.jpg 360w, /assets/img/promena-2-rok-zboku-720.jpg 720w" sizes="(min-width: 1000px) 18vw, 60vw" width="720" height="1200" loading="lazy" decoding="async" alt="Aneta z boku – srpen 2026, rok po porodu, 72 kg">
+                    </picture>
+                    <figcaption><strong>72 kg</strong><span>Srpen 2026, rok po porodu</span></figcaption>
+                  </figure>
+                </li>
+                </ol>
+              </div>
+            </div>
+            <p class="gallery__note">Fotky jsou jen oříznuté a barevně sjednocené, postava není nijak upravená. Výsledky jsou individuální.</p>
+          </div>
+
+          <div class="story__cols">
+            <article>
+              <h3>Začátek</h3>
+              <p>Můj tehdejší život stál na přejídání, spoustě piva a téměř žádném pohybu. Přestala jsem kupovat oblečení a kupovala jen boty – velikost nohy se neměnila. Až při prohlížení fotek jsem uviděla realitu a řekla si, že takhle to dál nejde.</p>
+            </article>
+            <article>
+              <h3>První proměna</h3>
+              <p>Plán mi sestavila maminka. První týden jsem byla unavená a pochybovala, jestli to zvládnu. Pak jsem se postavila na váhu: 3&nbsp;kg dole. To mě nakoplo – přišla energie, sport a radost z oblečení.</p>
+            </article>
+            <article>
+              <h3>Po porodu</h3>
+              <p>Plán jsem si znovu připnula na lednici, tentokrát s miminkem a méně časem. Rok po porodu vážím 72&nbsp;kg. Největší radost mi ale dělá, že jsem zase spokojená ve svém těle.</p>
+            </article>
+          </div>
         </div>
 
         <aside class="mother" aria-labelledby="maminka-title">
@@ -332,8 +445,8 @@
             <p>Za každým z nich byl konkrétní člověk, jeho příběh, cíle a přání něco ve svém životě změnit. Právě její zkušenosti jsou pro mě obrovskou inspirací a s maminkou budu i nadále úzce spolupracovat.</p>
           </div>
           <dl class="mother__facts">
-            <div><dt>13 let</dt><dd>praxe s Metabolic Balance®</dd></div>
-            <div><dt>~1 400</dt><dd>individuálních výživových plánů</dd></div>
+            <div><dt>13&nbsp;let</dt><dd>praxe s Metabolic Balance®</dd></div>
+            <div><dt>~1&nbsp;400</dt><dd>individuálních výživových plánů</dd></div>
           </dl>
         </aside>
       </div>
@@ -409,7 +522,7 @@
       <div class="wrap faq__grid">
         <div class="faq__intro">
           <h2 class="title" id="dotazy-title">Časté dotazy</h2>
-          <p class="muted">Nenašli jste odpověď? <a href="#kontakt">Napište mi</a>, ráda poradím.</p>
+          <p class="muted">Nenašli jste odpověď? <a href="#kontakt">Ozvěte se mi</a>, ráda poradím.</p>
         </div>
         <div class="acc acc--plain" data-acc>
           <details>
@@ -440,8 +553,10 @@
       </div>
     </section>
 
-    <!-- REFERENCE -->
-    <section class="section refs" id="reference" aria-labelledby="reference-title">
+    <!-- REFERENCE – sekce je zatím skrytá (hidden). Až budou skutečné ohlasy klientů,
+         smažte atribut hidden u sekce níž a vraťte odkaz na Reference do menu
+         (v <nav class="nav"> a do patičky). -->
+    <section hidden class="section refs" id="reference" aria-labelledby="reference-title">
       <div class="wrap">
         <div class="refs__head">
           <h2 class="title" id="reference-title">Zkušenosti klientů</h2>
@@ -479,57 +594,27 @@
     <section class="section contact" id="kontakt" aria-labelledby="kontakt-title">
       <div class="wrap">
         <div class="contact__card">
+          <figure class="contact__photo">
+            <picture>
+              <source type="image/avif" srcset="/assets/img/kontakt-900.avif 900w, /assets/img/kontakt-1600.avif 1600w" sizes="(min-width: 960px) 44vw, 94vw">
+              <source type="image/webp" srcset="/assets/img/kontakt-900.webp 900w, /assets/img/kontakt-1600.webp 1600w" sizes="(min-width: 960px) 44vw, 94vw">
+              <img src="/assets/img/kontakt-1600.jpg" srcset="/assets/img/kontakt-900.jpg 900w, /assets/img/kontakt-1600.jpg 1600w" sizes="(min-width: 960px) 44vw, 94vw" width="1600" height="1067" loading="lazy" decoding="async" alt="Ruce u snídaně s hrnkem kávy a otevřeným časopisem">
+            </picture>
+          </figure>
           <div class="contact__side">
-            <figure class="contact__photo">
-              <picture>
-                <source type="image/avif" srcset="/assets/img/kontakt-900.avif 900w, /assets/img/kontakt-1600.avif 1600w" sizes="(min-width: 960px) 44vw, 94vw">
-                <source type="image/webp" srcset="/assets/img/kontakt-900.webp 900w, /assets/img/kontakt-1600.webp 1600w" sizes="(min-width: 960px) 44vw, 94vw">
-                <img src="/assets/img/kontakt-1600.jpg" srcset="/assets/img/kontakt-900.jpg 900w, /assets/img/kontakt-1600.jpg 1600w" sizes="(min-width: 960px) 44vw, 94vw" width="1600" height="1067" loading="lazy" decoding="async" alt="Ruce u snídaně s hrnkem kávy a otevřeným časopisem">
-              </picture>
-            </figure>
             <h2 class="title" id="kontakt-title">Udělejte první krok</h2>
-            <p>Napište mi pár slov o sobě a o tom, co byste chtěli změnit. Ozvu se a domluvíme úvodní konzultaci osobně nebo online.</p>
+            <p>Zavolejte mi nebo napište pár slov o sobě a o tom, co byste chtěli změnit. Domluvíme úvodní konzultaci osobně nebo online.</p>
+            <div class="contact__actions">
+              <a class="btn btn--dark" href="tel:+420739998919">Zavolat</a>
+              <a class="btn btn--ghost" href="https://wa.me/420739998919" target="_blank" rel="noopener">Napsat na WhatsApp</a>
+            </div>
             <ul class="contact__list">
-              <li><span>Telefon a WhatsApp</span><a href="tel:+420000000000">[+420 000 000 000]</a></li>
-              <li><span>E-mail</span><a href="mailto:info@example.cz">[info@vase-domena.cz]</a></li>
-              <li><span>Konzultace</span><span>[Město, adresa] nebo online</span></li>
+              <li><span>Telefon</span><a href="tel:+420739998919">+420 739 998 919</a></li>
+              <li><span>E-mail</span><a href="mailto:a.sindlarova@email.cz">a.sindlarova@email.cz</a></li>
+              <li><span>Adresa</span><a href="https://www.google.com/maps/search/?api=1&amp;query=T%C4%9B%C5%A1kovice%20127%2C%20747%2064" target="_blank" rel="noopener">Těškovice 127, 747 64</a></li>
+              <li><span>Konzultace</span><span>osobně nebo online</span></li>
             </ul>
           </div>
-
-          <!-- Formulář: na formspree.io si založte formulář a místo VAS_FORM_ID vložte jeho ID. -->
-          <form class="form" action="https://formspree.io/f/VAS_FORM_ID" method="POST" data-form>
-            <div class="field">
-              <label for="f-name">Jméno a příjmení</label>
-              <input id="f-name" name="jmeno" type="text" autocomplete="name" required>
-            </div>
-            <div class="form__row">
-              <div class="field">
-                <label for="f-email">E-mail</label>
-                <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required>
-              </div>
-              <div class="field">
-                <label for="f-phone">Telefon <small>nepovinné</small></label>
-                <input id="f-phone" name="telefon" type="tel" autocomplete="tel" inputmode="tel">
-              </div>
-            </div>
-            <fieldset class="field">
-              <legend>Konzultace mi vyhovuje</legend>
-              <div class="chips">
-                <label class="chip"><input type="radio" name="forma" value="osobně" checked><span>Osobně</span></label>
-                <label class="chip"><input type="radio" name="forma" value="online"><span>Online</span></label>
-                <label class="chip"><input type="radio" name="forma" value="je mi to jedno"><span>Je mi to jedno</span></label>
-              </div>
-            </fieldset>
-            <div class="field">
-              <label for="f-msg">Co byste chtěli změnit?</label>
-              <textarea id="f-msg" name="zprava" rows="4"></textarea>
-            </div>
-            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-            <input type="hidden" name="_subject" value="Nová zpráva z webu">
-            <label class="consent"><input type="checkbox" name="souhlas" value="ano" required><span>Souhlasím se zpracováním osobních údajů za účelem odpovědi na můj dotaz.</span></label>
-            <button class="btn btn--dark btn--wide" type="submit">Odeslat zprávu</button>
-            <p class="form__status" role="status" aria-live="polite" data-form-status></p>
-          </form>
         </div>
       </div>
     </section>
@@ -540,17 +625,23 @@
       <div class="footer__brand">
         <p class="footer__name">Aneta Šindlářová, DiS.</p>
         <p>Výživová poradkyně Metabolic Balance®. Individuální jídelníček podle hodnot Vaší krve, konzultace osobně i online.</p>
+        <address class="footer__contact">
+          <a href="tel:+420739998919">+420 739 998 919</a><br>
+          <a href="mailto:a.sindlarova@email.cz">a.sindlarova@email.cz</a><br>
+          Těškovice 127, 747 64<br>
+          IČO: 29953057
+        </address>
       </div>
       <nav class="footer__nav" aria-label="Odkazy v patičce">
         <a href="#program">Program</a>
-        <a href="#pribeh">Můj příběh</a>
         <a href="#o-mne">O mně</a>
+        <a href="#pribeh">Můj příběh</a>
         <a href="#cenik">Ceník</a>
         <a href="#dotazy">Časté dotazy</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
       <div class="footer__legal">
-        <p>© <span data-year>2026</span> Aneta Šindlářová, DiS.</p>
+        <p>© <span data-year>2026</span> Aneta Šindlářová, DiS., IČO 29953057</p>
         <p>Metabolic Balance® je registrovaná ochranná známka. Více o metodě na <a href="https://www.metabolic-balance.com/" rel="noopener" target="_blank">metabolic-balance.com</a>.</p>
         <p>Fotografie: Unsplash (CC0) přes Wikimedia Commons.</p>
       </div>

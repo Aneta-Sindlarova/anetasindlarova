@@ -32,7 +32,9 @@
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && nav.classList.contains('is-open')) { setMenu(false); burger.focus(); }
     });
-    window.matchMedia('(min-width: 1100px)').addEventListener('change', function (m) { if (m.matches) setMenu(false); });
+    var wide = window.matchMedia('(min-width: 1100px)');
+    var onWide = function (m) { if (m.matches) setMenu(false); };
+    if (wide.addEventListener) wide.addEventListener('change', onWide); else if (wide.addListener) wide.addListener(onWide);
   }
 
   var mobileCta = document.querySelector('[data-mobile-cta]');
@@ -61,15 +63,17 @@
     var links = Array.prototype.slice.call(document.querySelectorAll('.nav__list a'));
     var map = {};
     links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s) map[s.id] = a; });
+    /* Vnořené cíle (Můj příběh uvnitř O mně): vyhrává poslední viditelný v pořadí dokumentu. */
+    var targets = Object.keys(map).map(function (id) { return document.getElementById(id); });
+    var visible = {};
     var spy = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting && map[en.target.id]) {
-          links.forEach(function (l) { l.removeAttribute('aria-current'); });
-          map[en.target.id].setAttribute('aria-current', 'true');
-        }
-      });
+      entries.forEach(function (en) { visible[en.target.id] = en.isIntersecting; });
+      var active = null;
+      targets.forEach(function (t) { if (visible[t.id]) active = t.id; });
+      links.forEach(function (l) { l.removeAttribute('aria-current'); });
+      if (active) map[active].setAttribute('aria-current', 'true');
     }, { rootMargin: '-45% 0px -50% 0px' });
-    Object.keys(map).forEach(function (id) { spy.observe(document.getElementById(id)); });
+    targets.forEach(function (t) { spy.observe(t); });
   }
   onScroll();
 
@@ -83,6 +87,18 @@
       }, { threshold: 0.35 });
       jo.observe(journey);
     }
+  }
+
+  /* Proměna na fotkách – přepínání zepředu / z boku */
+  var gallery = document.querySelector('[data-gallery]');
+  if (gallery) {
+    var vbtns = gallery.querySelectorAll('[data-view-btn]');
+    vbtns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        gallery.setAttribute('data-view', b.getAttribute('data-view-btn'));
+        vbtns.forEach(function (o) { o.setAttribute('aria-pressed', String(o === b)); });
+      });
+    });
   }
 
   /* Akordeon – v jedné skupině je otevřená jen jedna položka */
@@ -115,43 +131,6 @@
     track.addEventListener('scroll', update, { passive: true });
     window.addEventListener('resize', update);
     update();
-  }
-
-  /* Formulář */
-  var form = document.querySelector('[data-form]');
-  if (form) {
-    form.noValidate = true;
-    var status = form.querySelector('[data-form-status]');
-    var say = function (msg, err) { status.textContent = msg; status.classList.toggle('is-error', !!err); };
-    var validate = function () {
-      var ok = true, first = null;
-      form.querySelectorAll('[required]').forEach(function (el) {
-        var valid = el.type === 'checkbox' ? el.checked : el.checkValidity() && el.value.trim() !== '';
-        var wrap = el.closest('.field') || el.closest('.consent');
-        if (wrap) wrap.classList.toggle('is-invalid', !valid);
-        el.setAttribute('aria-invalid', String(!valid));
-        if (!valid) { ok = false; if (!first) first = el; }
-      });
-      if (first) first.focus();
-      return ok;
-    };
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!validate()) { say('Doplňte prosím jméno, platný e-mail a souhlas se zpracováním údajů.', true); return; }
-      if (form.action.indexOf('VAS_FORM_ID') !== -1) {
-        say('Formulář zatím není napojený. Napište mi prosím e-mail nebo zavolejte.', true); return;
-      }
-      var btn = form.querySelector('button[type="submit"]');
-      btn.disabled = true; say('Odesílám…');
-      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
-        .then(function (r) { if (!r.ok) throw new Error(); form.reset(); say('Děkuji, zpráva je odeslaná. Ozvu se Vám co nejdřív.'); })
-        .catch(function () { say('Zprávu se nepodařilo odeslat. Zkuste to prosím znovu, nebo mi napište e-mail.', true); })
-        .then(function () { btn.disabled = false; });
-    });
-    form.addEventListener('input', function (e) {
-      var wrap = e.target.closest('.is-invalid');
-      if (wrap) { wrap.classList.remove('is-invalid'); e.target.removeAttribute('aria-invalid'); }
-    });
   }
 
   var year = document.querySelector('[data-year]');
